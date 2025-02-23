@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Protocolos del intenet</title>
+</head>
+<link rel="stylesheet" type="text/css" href="simple.min.css">
+<body>
+<h1>Los protocolos del internet</h1>
+<p>
+Indice
+<a href="#HTTP">HTTP(S)</a>
+<a href="#SMTP">SMTP</a>
+<a href="#IRC">IRC</a>
+<a href="#Gopher">Gopher y Gemini</a>
+<a href="#SSH">SSH y Telnet</a>
+<a href="#FTP">FTP(s) y SFTP</a>
+<a href="#IPFS">IPFS</a>
+<a href="#BitTorrent">BitTorrent</a>
+</p>
+<h2 id="HTTP">El protocolo HTTP</h2>
+<p>
+El protocolo HTTP, la última versión especificada es<a href="https://tools.ietf.org/html/rfc7540">RFC-7540</a>, es un protocolo de comunicación construido en el TCP/IP. Permite la comunicación mediante archivos. Los más compatibles por navegadores siendo html y otros formatos de texto, como xml y json, y los pdf. La <a href="https://www.w3.org/Protocols/HTTP/AsImplemented.html">primera revisión</a> de HTTP apareció en 1991 y su popularidad exploto con Netcape, un navegador que exploto en popularidad, pero que dejo de ser usado en favor de Internet Explorer(IE). Actualmente la mayoria de las paginas son HTML con referencias a archivos Css y Js para funcionalidad añadida. HTTPs es una versión que tunelea la conexión por SSL o TLS para aportar protección adicional en forma de encripción.
+</p>
+<h2 id="SMTP">El protocolo SMTP y POP3</h2>
+<p>
+SMTP y POP3 son protocolos de nivel de aplicación que permiten la gestión de correo electronico.
+SMTP (Protocolo de transmision sencilla de correo)es usado principalmente en los servidores de correo electronico, aunque también sea usado en parte por los clienes. SMTP establece entre dos servidores, MTA (agentes de transmisión de correo), estos son los servidores que utilizan los proovedores de correo (gmail, outlook, mail.ru, etc) para manejar el correo. Estos proovedores estan federados para permitir interoperabilidad.
+POP3 (Protocolo de Oficina Postal) es, por otro lado, un protocolo de transmisión que permite a los usuarios recibir el correo del servidor, mientras que utilizan SMTP enviarlos. POP3 ha dejado obsoletos a POP2 y POP1. IMAP es otro protocolo de acceso al correo.
+</p>
+<h2 id="IRC">IRC</h2>
+<p>
+IRC (Chat de Relé por Internet) es un protocolo de comunicación en tiempo real basado en texto que permite la comunicación entre dos o más personas. Para conectarse hay que utilizar un cliente y conectarse a un canal. IRC ha sido sustituido principalmente por mensajeria instantanea, como Whatsapp y SimpleX. Algunos clientes inclullen Chatzilla, irsii, mIRC y weechat.
+</p>
+<h2 id="Gopher">Gopher y Gemini</h2>
+<p>
+Gopher es un protocolo basado en TCP/IP. Esta especificado en <a href="https://tools.ietf.org/html/rfc1436">RFC-1436</a>. Gopher e diseño con terminales en mente, pero debido a su popularidad muchos navegadores permitian navegar paginas deste protocolo, como por ejemplo Firefox, pero versiones modernas han perdido esta funcionalidad. La principal ventaja de Gopher era que perimitia la navegadion entre distintas paginas de manera intrinsica, sin necesidad de hiperenlaces. Gopher solo permite mostras texto, con un formateado especial para trasmitir información como vinculos o referencias. Por Gopher se puden transmitir archivos, para luego se visualizados por otros programas
+Por otro lado Gemini es un protocolo moderno inspirado por Gopher que pretende ser un punto intermedio entre la web moderna y Gopher. Tiene un formato de texto propio, comunmente referido como gemtext. Algunos clientes son Anfora, Bombadillo y Buran.
+</p>
+<h2 id="SSH">SSH y Telnet</h2>
+<p>
+SSH y Telnet son ambos protocolos de terminal remota. Es decir, permiten loggear a un ordenador remoto. Sin embargo, solo permiten el uso de la terminal, no de interfaces gráficas.
+Telnet tiene mayor antigüedad, y esta discontinuado. Hoy en día Telnet no se usa con fines comerciales, pero todavia se pueden encontrar páginas que permitan conexiones Telnet, por ejemplo, para permitir el uso de juegos.
+SSH es más moderno y sigue estando actualizado. Pero no tiene tanta retrocompatibilidad. SSH se utiliza principalmente a la hora de trabajar con servidores, que no tienen una interfaz gráfica y otras computadoras a distancia.
+</p>
+<h2 id="FTP">FTP(s) y SFTP</h2>
+FTP es un protocolo de transimisión de archivos que permite visualizar uno o varios directorios externo como si se encontrare en el ordenador. Se utiliza casi exclusivamente para manejar directorios remotos. FTP tiene dos protocolos relacionados FTPS y SFTP. SFTP utiliza SSH para otorgar mayor seguridad a los contenidos, mientras que FTPS que utiliza TLS con el mismo objeto.
+</body>
+<h2 id="IPFS">IPFS</h2>
+<p>
+<a href="ipfs.tech">IPFS (Sistema de Archivos Interplanetario, del inglés InterPlanetary File Sistem)</a> es un protocolo p2p (red entre pares) con el objetivo de transmitir archivos de manera decentralizada. Exsisten redes muchas redes similares, como Freenet y Zeronet, sin embargo IPFS es la más popular. IPFS funciona mediante nodos, que guardan y comparten los contenidos. Además tiene soporte nativo en navegadores modernos como Brave y Opera para Android, y para navegadores que no lo tengan existe una <a href="https://docs.ipfs.tech/install/ipfs-companion/">extensión</a> que la proporciona, garantizando su facilidad de uso y su popularidad. IPFS ha sido utilizado para eludir censura, el caso de mayor notabilidad fue en 2017, cuando las paginas de Referendum independentista catalán y otras paginas relacionadas se publicaron en IPFS, debido a que sus paginas web habian sido tumbadas al considerarse ilegales.
+<h2 id="BitTorrent">BitTorrent</h2>
+<p>
+BitTorrent, tambien conocido solamente como torrent, es un protocolo de intercambio de archivos entre iguales (p2p). Bittorrent v1 fue creada en 2001, y su concepción fue un protocolo que permitia a los usuarios compartir archivos entre si "sin necesidad" de un servidor central. A efectos practicos, si es necesaria la presencia de un servidor central, pero ciertos clientes permiten una modificación del protocolo que les permite decentralizar completamente el proceso mediante DHT (Tablad de Hashes Distribuidas). En 2017 se publicó la especificación v2, con el cambio más importante siendo el de mejorar la criptografia, cambiand el algoritmo SHA-1 a SHA-256. Bittorrent se utiliza casi principalmente para distribuir aplicaciones y otros recursos de licencias abiertas, pero a su mayoria se usa para compartir contenidos protegidos por los derechos de autor.
+</p>
+</html>
